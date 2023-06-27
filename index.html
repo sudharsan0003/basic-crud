@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic-CRUD</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1 class="title">Note Application</h1>
+    <form class="item-form" id="item-form">
+      <div class="form-control">
+        <label for="item-name" class="label-input">Item Name :</label>
+        <input type="text" class="item-input" id="item-name" name="item-name" />
+      </div>
+      <div class="form-control">
+        <label for="item-quantity" class="label-input">Item Quantity :</label>
+        <input
+          type="number"
+          class="item-input"
+          id="item-quantity"
+          name="item-quantity"
+        />
+      </div>
+      <input type="submit" value="ADD" class="btn-submit" />
+    </form>
+
+    <ul class="item-list-container" id="item-list-container">
+      <ol class="item-list">
+        <span class="item-detail">Apple</span>
+      </ol>
+      <ol class="item-list">
+        <span class="item-detail">Orange</span>
+      </ol>
+      <ol class="item-list">
+        <span class="item-detail">Banana</span>
+      </ol>
+      <button class="btn-list">Edit</button>
+      <button class="btn-list">Delete</button>
+    </ul>
+
+    <!-- custom css -->
+    <script src="./script.js"></script>
+  </body>
+</html>
